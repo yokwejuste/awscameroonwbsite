@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
+import { fetchCommunities } from '../utils/dataLoader'
 import CommunityGrid from './CommunityGrid'
 
 export default function Communities() {
   const [activeTab, setActiveTab] = useState('clubs')
-  const [communities, setCommunities] = useState([])
+  const [clubs, setClubs] = useState([])
+  const [userGroups, setUserGroups] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -14,12 +16,14 @@ export default function Communities() {
   const fetchData = async () => {
     try {
       setLoading(true)
-      const response = await fetch('/data.json')
-      if (!response.ok) {
-        throw new Error('Failed to fetch data')
-      }
-      const data = await response.json()
-      setCommunities(data)
+      const allCommunities = await fetchCommunities()
+
+      // Separate clubs and user groups
+      const clubsList = allCommunities.filter(c => c.type === 'Cloud Club')
+      const groupsList = allCommunities.filter(c => c.type === 'User Group')
+
+      setClubs(clubsList)
+      setUserGroups(groupsList)
       setError(null)
     } catch (err) {
       setError('Failed to load communities data')
@@ -29,7 +33,7 @@ export default function Communities() {
     }
   }
 
-  const displayData = activeTab === 'clubs' ? communities.clubs || [] : communities.userGroups || []
+  const displayData = activeTab === 'clubs' ? clubs : userGroups
 
   return (
     <section className="communities-section bg-white py-12 sm:py-16 lg:py-20" id="communities-section">

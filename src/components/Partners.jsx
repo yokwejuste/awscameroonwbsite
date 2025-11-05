@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { fetchPartners as fetchPartnersData } from '../utils/dataLoader'
 
 export default function Partners() {
   const [partners, setPartners] = useState([])
@@ -10,12 +11,8 @@ export default function Partners() {
 
   const fetchPartners = async () => {
     try {
-      const response = await fetch('/data.json')
-      if (!response.ok) {
-        throw new Error('Failed to fetch data')
-      }
-      const data = await response.json()
-      setPartners(data.partners || [])
+      const partnersList = await fetchPartnersData()
+      setPartners(partnersList || [])
     } catch (err) {
       console.error(err)
     } finally {

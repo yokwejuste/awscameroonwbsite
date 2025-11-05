@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { fetchCommunities } from '../utils/dataLoader'
 import OrganizerCard from './OrganizerCard'
 
 export default function CommunityDetail() {
@@ -16,13 +17,7 @@ export default function CommunityDetail() {
   const fetchCommunity = async () => {
     try {
       setLoading(true)
-      const response = await fetch('/data.json')
-      if (!response.ok) {
-        throw new Error('Failed to fetch data')
-      }
-      const data = await response.json()
-
-      const allCommunities = [...data.clubs, ...data.userGroups]
+      const allCommunities = await fetchCommunities()
       const found = allCommunities.find(c => c.slug === slug)
 
       if (!found) {

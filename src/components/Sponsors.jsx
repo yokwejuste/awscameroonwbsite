@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { fetchSponsors as fetchSponsorsData } from '../utils/dataLoader'
 
 export default function Sponsors() {
   const [sponsors, setSponsors] = useState([])
@@ -10,12 +11,8 @@ export default function Sponsors() {
 
   const fetchSponsors = async () => {
     try {
-      const response = await fetch('/data.json')
-      if (!response.ok) {
-        throw new Error('Failed to fetch data')
-      }
-      const data = await response.json()
-      setSponsors(data.sponsors || [])
+      const sponsorsList = await fetchSponsorsData()
+      setSponsors(sponsorsList || [])
     } catch (err) {
       console.error(err)
     } finally {
