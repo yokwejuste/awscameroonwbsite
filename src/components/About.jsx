@@ -1,4 +1,15 @@
+import { useState, useEffect } from 'react'
+import { getStatistics } from '../utils/dataLoader'
+
 export default function About() {
+  const [stats, setStats] = useState({ communities: 7, members: 2000, events: 50 })
+
+  useEffect(() => {
+    getStatistics().then(setStats).catch(err => {
+      console.error('Failed to load statistics:', err)
+    })
+  }, [])
+
   return (
     <section className="about-section bg-gray-50 py-12 sm:py-16 lg:py-20" id="about-section">
       <div className="container mx-auto px-4">
@@ -21,15 +32,15 @@ export default function About() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8 pt-6 sm:pt-8 lg:pt-10 border-t-2 border-aws-orange">
               <div className="text-center">
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-aws-orange mb-1 sm:mb-2">7+</h3>
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-aws-orange mb-1 sm:mb-2">{stats.communities}+</h3>
                 <p className="text-xs sm:text-sm text-gray-600 font-medium">Communities</p>
               </div>
               <div className="text-center">
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-aws-orange mb-1 sm:mb-2">2K+</h3>
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-aws-orange mb-1 sm:mb-2">{stats.members}+</h3>
                 <p className="text-xs sm:text-sm text-gray-600 font-medium">Members</p>
               </div>
               <div className="text-center">
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-aws-orange mb-1 sm:mb-2">50+</h3>
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-aws-orange mb-1 sm:mb-2">{stats.events}+</h3>
                 <p className="text-xs sm:text-sm text-gray-600 font-medium">Events Hosted</p>
               </div>
             </div>

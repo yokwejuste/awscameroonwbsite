@@ -1,0 +1,22 @@
+{
+  "partners": [
+    {
+      "id": 1,
+      "name": "Django Cameroon",
+      "logo": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=200&h=200&fit=crop",
+      "website": "https://django-cameroon.org"
+    },
+    {
+      "id": 2,
+      "name": "Python Cameroon",
+      "logo": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=200&h=200&fit=crop",
+      "website": "https://python-cameroon.org"
+    },
+    {
+      "id": 3,
+      "name": "Angular Cameroon",
+      "logo": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=200&h=200&fit=crop",
+      "website": "https://angular-cameroon.org"
+    }
+  ]
+}

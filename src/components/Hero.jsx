@@ -1,7 +1,16 @@
 import { useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { getStatistics } from '../utils/dataLoader'
 
 export default function Hero() {
   const navigate = useNavigate()
+  const [stats, setStats] = useState({ communities: 7, members: 2000, events: 50 })
+
+  useEffect(() => {
+    getStatistics().then(setStats).catch(err => {
+      console.error('Failed to load statistics:', err)
+    })
+  }, [])
 
   const handleExploreCommunities = () => {
     const communitiesSection = document.getElementById('communities-section')
