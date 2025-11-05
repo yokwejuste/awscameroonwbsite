@@ -1,0 +1,223 @@
+{
+  "clubs": [
+    {
+      "id": 1,
+      "slug": "yaounde-cloud-club",
+      "name": "Yaoundé Cloud Club",
+      "type": "Cloud Club",
+      "description": "Cloud computing enthusiasts and professionals in Yaoundé sharing knowledge and best practices.",
+      "fullDescription": "The Yaoundé Cloud Club is a vibrant community dedicated to exploring Amazon Web Services and cloud computing technologies. Our members range from beginners learning the basics to experienced architects designing complex cloud solutions. We host monthly meetups, workshops, and hackathons to foster learning and innovation.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+      "meetupLink": "https://www.meetup.com/yaoundé-cloud-club",
+      "linkedin": "https://www.linkedin.com/company/yaoundé-cloud-club",
+      "twitter": "https://twitter.com/yde_cloudclub",
+      "organizers": [
+        {
+          "id": 1,
+          "name": "Jean Kamga",
+          "role": "Lead Organizer",
+          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+          "linkedin": "https://www.linkedin.com/in/jean-kamga",
+          "twitter": "https://twitter.com/jeankamga",
+          "github": "https://github.com/jeankamga",
+          "website": "https://jeankamga.dev",
+          "blog": "https://blog.jeankamga.dev"
+        },
+        {
+          "id": 2,
+          "name": "Marie Nana",
+          "role": "Co-Organizer",
+          "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+          "linkedin": "https://www.linkedin.com/in/marie-nana",
+          "twitter": "https://twitter.com/marienana"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "douala-tech-hub",
+      "name": "Douala Tech Hub",
+      "type": "Cloud Club",
+      "description": "Tech enthusiasts and cloud professionals in Douala collaborating on cloud projects.",
+      "fullDescription": "Douala Tech Hub brings together innovators and developers passionate about technology and cloud computing. We focus on practical applications, real-world problem solving, and building a strong network of tech professionals in Douala and surrounding regions.",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+      "meetupLink": "https://www.meetup.com/douala-tech-hub",
+      "linkedin": "https://www.linkedin.com/company/douala-tech-hub",
+      "twitter": "https://twitter.com/douala_tech",
+      "organizers": [
+        {
+          "id": 3,
+          "name": "Alain Fotso",
+          "role": "Lead Organizer",
+          "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+          "linkedin": "https://www.linkedin.com/in/alain-fotso",
+          "github": "https://github.com/alainfotso",
+          "website": "https://alainfotso.com"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "buea-devops-community",
+      "name": "Buea DevOps Community",
+      "type": "Cloud Club",
+      "description": "DevOps and infrastructure professionals discussing cloud technologies and deployment strategies.",
+      "fullDescription": "The Buea DevOps Community is dedicated to sharing knowledge about DevOps practices, infrastructure as code, containerization, and cloud deployment strategies. We create an environment where professionals can learn from each other and tackle real infrastructure challenges.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+      "meetupLink": "https://www.meetup.com/buea-devops",
+      "linkedin": "https://www.linkedin.com/company/buea-devops",
+      "twitter": "https://twitter.com/buea_devops",
+      "organizers": [
+        {
+          "id": 4,
+          "name": "Victor Njie",
+          "role": "Lead Organizer",
+          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+          "linkedin": "https://www.linkedin.com/in/victor-njie",
+          "twitter": "https://twitter.com/victornjie",
+          "github": "https://github.com/victornjie",
+          "blog": "https://devops.victornjie.com"
+        }
+      ]
+    }
+  ],
+  "userGroups": [
+    {
+      "id": 101,
+      "slug": "aws-cameroon-yaounde",
+      "name": "AWS Cameroon - Yaoundé Group",
+      "type": "User Group",
+      "description": "Official AWS User Group for Yaoundé region. Monthly meetups discussing AWS services and cloud solutions.",
+      "fullDescription": "The AWS Cameroon Yaoundé Group is the official AWS User Group in Yaoundé. We bring together AWS practitioners, enthusiasts, and learners to share best practices, discuss the latest AWS services, and help each other succeed with cloud technology. Our members come from various industries including finance, healthcare, e-commerce, and startups.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+      "meetupLink": "https://www.meetup.com/aws-cameroon-yaounde",
+      "linkedin": "https://www.linkedin.com/groups/aws-cameroon-yaounde",
+      "twitter": "https://twitter.com/awscmr_yaounde",
+      "organizers": [
+        {
+          "id": 5,
+          "name": "Fogang Nyuyki",
+          "role": "Community Lead",
+          "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+          "linkedin": "https://www.linkedin.com/in/fogang-nyuyki",
+          "twitter": "https://twitter.com/fogangnyuyki",
+          "github": "https://github.com/fogangnyuyki"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "slug": "aws-cameroon-douala",
+      "name": "AWS Cameroon - Douala Group",
+      "type": "User Group",
+      "description": "AWS User Group for Douala and surrounding areas. Focused on AWS certifications and cloud architecture.",
+      "fullDescription": "Join the AWS Cameroon Douala Group to connect with cloud professionals in the Littoral region. We focus on AWS certifications, cloud architecture patterns, and practical implementations. Our monthly sessions cover everything from foundational services to advanced architectural designs.",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+      "meetupLink": "https://www.meetup.com/aws-cameroon-douala",
+      "linkedin": "https://www.linkedin.com/groups/aws-cameroon-douala",
+      "twitter": "https://twitter.com/awscmr_douala",
+      "organizers": [
+        {
+          "id": 6,
+          "name": "Valerie Ngomsi",
+          "role": "Community Lead",
+          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+          "linkedin": "https://www.linkedin.com/in/valerie-ngomsi",
+          "website": "https://valerietech.com"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "slug": "aws-cameroon-northwest",
+      "name": "AWS Cameroon - Northwest Group",
+      "type": "User Group",
+      "description": "Community for AWS enthusiasts in Northwest region promoting cloud adoption and knowledge sharing.",
+      "fullDescription": "The AWS Cameroon Northwest Group is dedicated to promoting cloud adoption and sharing AWS knowledge in the Northwest region. We host regular meetups, certification prep sessions, and hands-on workshops to help community members grow their cloud skills.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+      "meetupLink": "https://www.meetup.com/aws-cameroon-northwest",
+      "linkedin": "https://www.linkedin.com/groups/aws-cameroon-nw",
+      "twitter": "https://twitter.com/awscmr_nw",
+      "organizers": [
+        {
+          "id": 7,
+          "name": "Augustine Teke",
+          "role": "Community Lead",
+          "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+          "linkedin": "https://www.linkedin.com/in/augustine-teke",
+          "github": "https://github.com/augustineteke",
+          "blog": "https://blog.augustineteke.dev"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "slug": "cameroon-cloud-women",
+      "name": "Cameroon Cloud Women",
+      "type": "User Group",
+      "description": "Empowering women in cloud computing and technology across Cameroon through mentorship and networking.",
+      "fullDescription": "Cameroon Cloud Women is a community dedicated to supporting and empowering women in cloud computing and technology. We provide mentorship, networking opportunities, and resources to help women advance their careers in cloud and tech. Our mission is to increase women's representation in Cameroon's tech industry.",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+      "meetupLink": "https://www.meetup.com/cameroon-cloud-women",
+      "linkedin": "https://www.linkedin.com/groups/cameroon-cloud-women",
+      "twitter": "https://twitter.com/cmr_cloud_women",
+      "organizers": [
+        {
+          "id": 8,
+          "name": "Nadia Mbah",
+          "role": "Founder & Lead Organizer",
+          "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+          "linkedin": "https://www.linkedin.com/in/nadia-mbah",
+          "twitter": "https://twitter.com/nadiambah",
+          "website": "https://nadiambah.com"
+        },
+        {
+          "id": 9,
+          "name": "Grace Ndongmo",
+          "role": "Co-Organizer",
+          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+          "linkedin": "https://www.linkedin.com/in/grace-ndongmo",
+          "github": "https://github.com/gracendongmo"
+        }
+      ]
+    }
+  ],
+  "partners": [
+    {
+      "id": 1,
+      "name": "Django Cameroon",
+      "logo": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=200&h=200&fit=crop",
+      "website": "https://django-cameroon.org"
+    },
+    {
+      "id": 2,
+      "name": "Python Cameroon",
+      "logo": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=200&h=200&fit=crop",
+      "website": "https://python-cameroon.org"
+    },
+    {
+      "id": 3,
+      "name": "Angular Cameroon",
+      "logo": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=200&h=200&fit=crop",
+      "website": "https://angular-cameroon.org"
+    }
+  ],
+  "sponsors": [
+    {
+      "id": 1,
+      "name": "TechCorp Solutions",
+      "description": "Empowering Cameroon's tech ecosystem through innovative solutions.",
+      "logo": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=300&fit=crop",
+      "website": "https://techcorp.cm",
+      "tier": "Gold"
+    },
+    {
+      "id": 2,
+      "name": "CloudFirst Africa",
+      "description": "Leading cloud adoption initiatives across Africa.",
+      "logo": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=300&fit=crop",
+      "website": "https://cloudfirst.africa",
+      "tier": "Silver"
+    }
+  ]
+}
